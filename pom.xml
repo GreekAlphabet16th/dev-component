@@ -6,7 +6,7 @@
 	<groupId>com.cetiti</groupId>
 	<artifactId>dev-component</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>dev-component</name>
 	<description>component about SpringBoot Bootstrap and AngularJS</description>
@@ -25,6 +25,12 @@
 	</properties>
 
 	<dependencies>
+		<!--provided:类似compile，期望JDK、容器或使用者会提供这个依赖-->
+<!--		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -78,6 +84,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>dev-component</finalName>
 	</build>
 
 

@@ -27,4 +27,4 @@ spring:
 ######  log config start ######
 logging:
   level:
-    com.cetiti.owls: debug
+    com.cetiti.devcomponent: debug
