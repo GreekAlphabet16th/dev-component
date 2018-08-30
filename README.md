@@ -1,11 +1,12 @@
 # dev-component
-> 开发组件
+> 分布式开发组件，采用dubbo进行RPC通信``
 
-## 前端
-- Angular
-- Bootstrap
-## 后端
-- SpringBoot
-## 数据库
-## 中间件
-- 消息中间件
+## component-service
+> 本地服务接口
+
+## component-controller
+> web服务
+
+## component-cache
+> 缓存组件
+

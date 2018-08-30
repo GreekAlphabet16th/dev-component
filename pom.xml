@@ -6,10 +6,10 @@
 	<groupId>com.cetiti</groupId>
 	<artifactId>dev-component</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+    <packaging>pom</packaging>
 
 	<name>dev-component</name>
-	<description>component about SpringBoot Bootstrap and AngularJS</description>
+    <description>分布式组件</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -25,29 +25,6 @@
 	</properties>
 
 	<dependencies>
-		<!--provided:类似compile，期望JDK、容器或使用者会提供这个依赖-->
-<!--		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
-		</dependency>-->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-spatial</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -64,14 +41,15 @@
 			<optional>true</optional>
 			<scope>true</scope>
 		</dependency>
-		<!-- common -->
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-		</dependency>
 	</dependencies>
 
-	<build>
+    <modules>
+        <module>component-service</module>
+        <module>component-controller</module>
+        <module>component-cache</module>
+    </modules>
+
+    <build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -84,7 +62,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>dev-component</finalName>
 	</build>
 
 

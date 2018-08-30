@@ -1,0 +1,22 @@
+######  tomcat config start ######
+server:
+  port: 8080
+  servlet:
+    context-path: /dev-component
+  tomcat:
+    uri-encoding: UTF-8
+######  thymeleaf config start ######
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    cache: false
+    suffix: .html
+######  data config start ######
+  datasource:
+    url: jdbc:mysql://192.168.138.130/dataX2?characterEncoding=utf8
+    username: root
+    password: 123456
+######  log config start ######
+logging:
+  level:
+    com.cetiti.devcomponent: debug
