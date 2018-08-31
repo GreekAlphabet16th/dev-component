@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.cetiti</groupId>
-    <artifactId>component-service</artifactId>
-    <version>0.0.1</version>
+    <artifactId>component-service-dubbo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>component-service</name>
-    <description>公共组件-本地服务</description>
+    <name>component-service-dubbo</name>
+    <description>公共组件-开放服务</description>
 
     <parent>
         <groupId>com.cetiti</groupId>
