@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Service
+@Service(timeout = 5000)
 public class UserServiceImpl implements UserService {
     @Override
     public List<Map<String, Object>> listUser() {
