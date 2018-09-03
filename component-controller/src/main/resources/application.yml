@@ -1,0 +1,13 @@
+# tomcat
+server:
+  port: 8080
+  servlet:
+    context-path: /dev-component
+  tomcat:
+    uri-encoding: utf-8
+# thymeleaf
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false

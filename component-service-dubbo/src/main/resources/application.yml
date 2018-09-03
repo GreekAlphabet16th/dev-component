@@ -1,0 +1,15 @@
+# tomcat
+server:
+  port: 9090
+  tomcat:
+    uri-encoding: utf-8
+# myBatis
+mybatis:
+  type-aliases-package: com.cetiti.domain
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  config-location: classpath:mybatis/config.xml
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.138.130/dataX2?characterEncoding=utf8
+    username: root
+    password: 123456

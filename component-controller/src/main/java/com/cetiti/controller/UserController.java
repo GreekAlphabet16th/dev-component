@@ -1,12 +1,12 @@
 package com.cetiti.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.cetiti.domain.User;
 import com.cetiti.service.UserService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Map;
 
 @RestController
 public class UserController {
@@ -15,7 +15,7 @@ public class UserController {
     private UserService userService;
 
     @RequestMapping("/listUser")
-    public List<Map<String, Object>> listUser() {
+    public List<User> listUser() {
         return userService.listUser();
     }
 }
