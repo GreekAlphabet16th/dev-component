@@ -4,6 +4,7 @@
 ## component-service
 > 本地服务接口
 - 提供接口与实体类
+>dubbo作为RPC通信框架，实体类需序列化
 
 ## component-service-dubbo
 > dubbo开放接口
