@@ -24,6 +24,7 @@ public class RedisTest {
         user.setUserId(1L);
         user.setUserName("zhouliyu");
         user.setPassWord("123.com");
-        valueOperations.set("test1", user);
+        //valueOperations.set("test1", user);
+        System.out.println(valueOperations.get("test1"));
     }
 }

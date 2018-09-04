@@ -1,3 +1,7 @@
+server: # tomcat
+  port: 9091
+  tomcat:
+    uri-encoding: utf-8
 spring: #Redis配置
   redis:
     host: 192.168.138.130

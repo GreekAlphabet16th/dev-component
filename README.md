@@ -7,7 +7,7 @@
 >dubbo作为RPC通信框架，实体类需序列化
 
 ## component-service-dubbo
-> dubbo开放接口
+> dubbo开放接口 port9090
 - zookeeper作为注册中心
 - 基于mysql+mybatis进行数据处理
 
@@ -17,4 +17,4 @@
 - 前端：angular+bootstrap
 
 ## component-cache
-> 缓存组件
+> 缓存组件 port9091
